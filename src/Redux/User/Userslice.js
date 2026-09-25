@@ -254,7 +254,7 @@ export const getPublicCourses = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/admin/public-course"
+        "https://course-management-backend-pink.vercel.app/api/admin/public-course"
       );
 
       return response.data;
